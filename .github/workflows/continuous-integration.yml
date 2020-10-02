@@ -28,7 +28,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           #IP address of EC2 instance
-          host: 54.165.194.74
+          host: 3.83.24.14
           #User you created on the EC2 instance
           username: test
           #Name of the secrets variable where you put your secret key
