@@ -1,0 +1,14 @@
+A simple application build around Open Notify API that gets the co ordinates of the ISS
+
+A user can track the location of the ISS and gets infromation as to its location
+
+You can also get the pass times in your local time and date of when the ISS will next
+pass by - times are approx and give a rise time - as in when it appears above the horizon
+this thing really wizzes by
+
+Also you can measure the distance from your location and the iss - this does not measure the 
+altitude but more as if it was on the ground and takes the curve of the earth into account
+
+Finally you can see which astronauts are on board
+
+There is a GUI Front of of the terminal application
