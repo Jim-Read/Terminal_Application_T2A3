@@ -48,6 +48,8 @@ def progress_bar_decorator_term(func):
 
 class Iss:
 
+    ''' Calls the ISS API to get its corrent co ordinates '''
+
     @staticmethod
     def iss_current_co_ords():
 
@@ -93,10 +95,9 @@ class Iss:
                 parameters['countryName'] = "N/A"
         return parameters
 
+    ''' Checking to see if iSS over land or water, if over land a location key is given and name key is given if over water '''
 
     def location_of_iss_at_input(parameters):
-
-        ''' Checking to see if iSS over land or water, if over land a location key is given and name key is given if over water '''
 
         # create new dictionary and add lat/long and location key if over land - return as variable
         try:  # {
@@ -221,6 +222,8 @@ class Iss:
 
 class Astronaut:
 
+    ''' Calls astro API and displays it to the terminal only - writes to file and RICH table displays '''
+
     def get_astro():
         cls()
         try:
@@ -246,6 +249,8 @@ class Astronaut:
             input('\nPress Enter to continue')
         except:
             print('The API is not callable - try again later')
+
+    ''' Calls astro API but is only used in GUI Front end - as a popup with information instead '''
 
     @progress_bar_decorator
     def gui_astros():
@@ -388,6 +393,7 @@ class Display_tables:
 
 
 class Gui:
+
     ''' Create the GUI Front end and populate buttons, fields etc '''
 
     @progress_bar_decorator_term
@@ -395,6 +401,9 @@ class Gui:
     def make_gui():
 
         # create theme, layout and define window propteries
+
+        # The tab layout is best explained by doing really, it doesnt make sense looking at it even now for me.  But I built it none the less.
+        # it was more concise when I was working on it, the IDE seems to like moving it around be it pycharm or visual studio. But never breaks it.  
 
         sg.theme('Darkblack')
         tab1_layout = [[sg.T('ISS', justification='center', size=(80,1), background_color='gray', text_color='white')], [sg.T('Location:', size=(8, 1)),
@@ -429,6 +438,7 @@ class Gui:
                        [sg.T('Distance', size=(8, 1)),
                         sg.T('', key="-iss_distance-", size=(10, 1), background_color='black', text_color='white')]]
 
+        #lays out all the elements on the screen
         layout = [[sg.TabGroup([[sg.Tab('Iss Locator', tab1_layout, tooltip='tip', element_justification='center')]])],
                   [sg.Button('ISS'), sg.Button('Astronauts'), sg.Button('Passes'), sg.Button('Measure'),
                    sg.Button('Help'), sg.Button('About'), sg.Button('Clear'), sg.Button('Exit')],
@@ -553,6 +563,7 @@ class Gui:
 
 
 class Menu:
+    
     ''' create a dictionary of operation for the user to select '''
 
     def __init__(self):

@@ -34,4 +34,4 @@ About this Terminal Application
 Clears the contents on screen
 
 - QUIT -
-Quit the program
+Quit the GUI Application and returns to terminal version

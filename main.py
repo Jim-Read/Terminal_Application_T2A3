@@ -1,6 +1,7 @@
 #!/usr/bin/python
 from classes import Menu, Gui
-import os, sys
+from rich.progress import Progress
+import os, sys, time
 
 
 if "--help" in sys.argv:
@@ -12,13 +13,3 @@ if '--gui' in sys.argv:
 
 self = Menu()
 self.menu()
-
-
-
-
-
-
-
-self = Menu()
-self.menu()
-
