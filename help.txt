@@ -1,0 +1,27 @@
+
+1 - Gets the current location of the International Space Station (ISS):
+    If over land it will return a timezone/current time/Country
+    If over water it will return the Ocean/Sea/basin etc - no timezone
+
+2 - Gets all current Astronauts on board the ISS currently orbiting Earth
+
+3 - Gets the next flyby due at users input location:
+    Input any address, partial address, with or with out town, postcode,
+    suburb, town, city, country
+    Links to geopy library which links to street maps API to get a
+    location and search
+
+    NOTE - If it finds an address/location, it will search the pass times
+    for there, so if incorrect address is found
+    - be more specific in search
+
+4 - Gets the distance from user input location and the ISS at its current
+    location and returns result in KMs
+
+5 - Reads this file
+
+6 - About this Terminal Application
+
+7 - Clears the contents on screen
+
+8 - Run the GUI Front End

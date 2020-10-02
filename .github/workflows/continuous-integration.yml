@@ -1,0 +1,47 @@
+name: CI/CD
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test_suite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v2
+      - name: Set Up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Run Tests
+        run: |
+          python -m unittest tests.py
+  deployment:
+    needs: test_suite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fresh clone & repo install
+        uses: appleboy/ssh-action@master
+        with:
+          #IP address of EC2 instance
+          host: 54.165.194.74
+          #User you created on the EC2 instance
+          username: test_user
+          #Name of the secrets variable where you put your secret key
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          script: |
+            rm -rf terminal_app
+            git clone https://github.com/Jim-Read/Terminal_app_T2A3.git
+            python3.8 -m venv /home/test_user/terminal_app/venv
+            source /home/test_user/terminal_app/venv/bin/activate
+            pip install -r /home/test_user/terminal_app/requirements.txt
+
+#
+
+
+      
