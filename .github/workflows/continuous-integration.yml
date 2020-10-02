@@ -30,16 +30,16 @@ jobs:
           #IP address of EC2 instance
           host: 54.165.194.74
           #User you created on the EC2 instance
-          username: test_user
+          username: test
           #Name of the secrets variable where you put your secret key
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
             rm -rf terminal_app
             git clone https://github.com/Jim-Read/Terminal_app_T2A3.git
-            python3.8 -m venv /home/test_user/terminal_app/venv
-            source /home/test_user/terminal_app/venv/bin/activate
-            pip install -r /home/test_user/terminal_app/requirements.txt
+            python3.8 -m venv /home/test/terminal_app/venv
+            source /home/test/terminal_app/venv/bin/activate
+            pip install -r /home/test/terminal_app/requirements.txt
 
 #
 
