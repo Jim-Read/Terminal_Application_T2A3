@@ -25,8 +25,8 @@ def progress_bar_decorator(func):
 
 
 
-''' Menu class used to drive the application and have other features utilize class functions and return parameters as such and correct table '''
 
+''' Menu class used to drive the application and have other features utilize class functions and return parameters as such and correct table '''
 
 
 class Iss:
@@ -202,7 +202,8 @@ class Iss:
 
 
 
-''' Astronaut class to call astros endpoint and return dictinary results and return them on terminal or gui'''
+''' Astronaut class to call astros endpoint and return dictinary results and return them on terminal or gui '''
+
 
 class Astronaut:
 
@@ -496,7 +497,7 @@ class Gui:
 
 class Menu:
 
-''' create a dictionary of operation for the user to select '''
+    ''' create a dictionary of operation for the user to select '''
 
     def __init__(self):
         self.operations = {
@@ -509,7 +510,7 @@ class Menu:
             'gui': Gui.make_gui }
 
 
-''' define the actual persistant menu that will be underneath all applications - even when gui is quit - returns to this - 1-8 selections '''
+    ''' define the actual persistant menu that will be underneath all applications - even when gui is quit - returns to this - 1-8 selections '''
 
 
     def menu(self):
@@ -557,7 +558,7 @@ class Menu:
             except:
                 Menu.menu(self)
 
-    ''' Help and ABout files needd to be displayed to window '''
+    ''' Help and About files needd to be displayed to window '''
 
     @staticmethod
     def help_text():
