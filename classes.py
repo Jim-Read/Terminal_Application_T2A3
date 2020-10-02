@@ -357,7 +357,7 @@ class Display_tables:
 
 class Gui:
 
-''' Create the GUI Front end and populate buttons, fields etc '''
+    ''' Create the GUI Front end and populate buttons, fields etc '''
 
     @progress_bar_decorator
     def make_gui():
