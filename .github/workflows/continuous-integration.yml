@@ -35,13 +35,17 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
-            rm -rf terminal_app
+            rm -rf Terminal_app_T2A3
             git clone https://github.com/Jim-Read/Terminal_app_T2A3.git
             apt-get install python3-venv
-            python3.8 -m venv /home/test/terminal_app/venv
-            source /home/test/terminal_app/venv/bin/activate
-            pip install -r /home/test/terminal_app/requirements.txt
+            python3.8 -m venv /home/test/Terminal_app_T2A3/venv
+            source /home/test/Terminal_app_T2A3/venv/bin/activate
+            pip install -r /home/test/Terminal_app_T2A3/requirements.txt
 
+#
+
+
+      
 #
 
 
