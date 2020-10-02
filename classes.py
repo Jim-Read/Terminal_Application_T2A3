@@ -614,7 +614,7 @@ class Menu:
                     about = self.operations.get('about')
                     about()
                 elif operation.strip() == '7':
-                    exit()
+                    menu_start = False
                 elif operation.strip() == '8':
                     gui = self.operations.get('gui')
                     gui()
