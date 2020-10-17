@@ -65,13 +65,15 @@ Used to convert UTC time to a readable format
 
 ### Features
 
-Track the ISS current location - gets timezone and location if over land or which body of water
-Get who is currently on board the ISS
-Get the next time the ISS passes over a location
-Measure the distance from any location on Earth to the ISS
-GUI Interface as well as the default Terminal 
+- Track the ISS current location - gets timezone and location if over land or which body of water
+- Get who is currently on board the ISS
+- Get the next time the ISS passes over a location
+- Measure the distance from any location on Earth to the ISS
+- GUI Interface as well as the default Terminal 
 
 ![terminal1](/docs/JimRead_T2A3_term1.jpg)
+![terminal1](/docs/JimRead_T2A3_term2a.jpg)
+![terminal1](/docs/JimRead_T2A3_term2b.jpg)
 ![terminal2](/docs/JimRead_T2A3_term2.jpg)
 ![terminal3](/docs/JimRead_T2A3_term3.jpg)
 ![terminal4](/docs/JimRead_T2A3_gui1.jpg)
