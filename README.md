@@ -73,13 +73,13 @@ Used to convert UTC time to a readable format
 
 ![terminal1](/docs/JimRead_T2A3_term1.jpg)
 ![terminal1](/docs/JimRead_T2A3_term2a.jpg)
+![terminal5](/docs/JimRead_T2A3_gui2.jpg)
 ![terminal2](/docs/JimRead_T2A3_term2.jpg)
 ![terminal1](/docs/JimRead_T2A3_term2b.jpg)
 ![terminal3](/docs/JimRead_T2A3_term3.jpg)
 ![terminal4](/docs/JimRead_T2A3_gui1.jpg)
 ![terminal4](/docs/JimRead_T2A3_gui1a.jpg)
 ![terminal4](/docs/JimRead_T2A3_gui3ab.jpg)
-![terminal5](/docs/JimRead_T2A3_gui2.jpg)
 ![terminal6](/docs/JimRead_T2A3_gui3.jpg)
 ![terminal7](/docs/JimRead_T2A3_gui4.jpg)
 
